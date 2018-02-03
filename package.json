@@ -1,0 +1,13 @@
+{
+  "name": "phaser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "author": "eric tuvesson",
+  "license": "",
+  "dependencies": {
+    "@types/node": "^6.0.87",
+    "express": "^4.16.2",
+    "phaser-ce": "^2.10.0"
+  }
+}
