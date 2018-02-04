@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "module": "commonjs",
         "target": "es5",
         "outDir": "build/js",
         "removeComments": true,
