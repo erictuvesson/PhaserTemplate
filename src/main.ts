@@ -1,3 +1,12 @@
+// Include Game Framework
+// import "pixi";
+// import "p2";
+// import "phaser-ce";
+
+// Include game components
+import { Player } from './player';
+
+// Game class
 class SimpleGame {
     constructor() {
         this.game = new Phaser.Game(800, 600, Phaser.AUTO, '', { 
@@ -9,20 +18,24 @@ class SimpleGame {
     }
 
     game: Phaser.Game;
+    player: Player;
 
-    preload() {
+    private preload() : void {
         
     }
 
-    create() {
+    private create() : void {
+        this.player = new Player(); 
+
+        var color = Phaser.Color.getRandomColor(50, 255, 255);
+        this.game.stage.backgroundColor = color;
+    }
+
+    private update() : void {
         
     }
 
-    update() {
-        
-    }
-
-    render() {
+    private render() : void {
         
     }
 }

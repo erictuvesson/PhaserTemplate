@@ -5,10 +5,19 @@
   "main": "server.js",
   "author": "eric tuvesson",
   "license": "",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && npx webpack obj/main.js",
+    "watch": "tsc --watch -p tsconfig.json | npx webpack --watch obj/main.js"
+  },
   "dependencies": {
-    "@types/node": "^6.0.87",
-    "common-js": "^0.3.8",
-    "express": "^4.16.2",
+    "@types/node": "^6.0.100",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "typescript": "^2.7.1",
+    "webpack": "^3.10.0",
+    "expose-loader": "^0.7.4",
+    "ts-loader": "^3.5.0",
     "phaser-ce": "^2.10.0"
   }
 }

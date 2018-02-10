@@ -61,5 +61,8 @@ typings/
 .next
 
 # build files
-build/js
-build/vendor
+obj
+
+# dist files
+dist/vendor
+dist/game.js

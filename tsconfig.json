@@ -1,11 +1,9 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
-        "target": "es5",
-        "outDir": "build/js",
+        "target": "es6",
+        "outDir": "obj",
         "removeComments": true,
-        "sourceMap": true,
-        "watch": true
+        "sourceMap": true
     },
     "files": [
         "node_modules/phaser-ce/typescript/phaser.d.ts",
